@@ -1,7 +1,4 @@
-/*
- HaxBall @ 2023 - Mario Carbajal - All rights reserved.
- d962bc67
-*/
+
 'use strict';(function(pa){function ja(){return w.Me(this,"")}function fc(a){return 66>a?66:400<a?400:a}function M(a,b){if(null==b)return null;null==b.rh&&(b.rh=pa.Ej++);var c;null==a.pj?a.pj={}:c=a.pj[b.rh];null==c&&(c=b.bind(a),a.pj[b.rh]=c);return c}class gc{constructor(){this.Fh=0;this.Tp=400;this.Pk=64;this.fj=32;this.la=window.document.createElement("canvas");this.cg=window.document.createElement("canvas");this.f=window.document.createElement("div");this.cg.width=this.la.width=this.fj;this.cg.height=
 this.la.height=this.Pk;this.Jh=this.cg.getContext("2d",null);this.c=this.la.getContext("2d",null);this.c.fillStyle="green";let a=[],b=0,c=this.fj;for(;b<c;)++b,a.push(0);this.Fq=a;this.f.appendChild(this.cg);this.f.className="graph";this.f.hidden=!0}Ln(a){this.f.hidden=!1;0>a?(a=150,this.c.fillStyle="#c13535"):this.c.fillStyle="#32FF32";let b=this.fj,c=this.Pk,d=this.Fh++;this.Fh>=b&&(this.Fh=0);this.Fq[d]=a;this.c.clearRect(d,0,1,c);a=a*c/this.Tp;this.c.fillRect(d,c-a,1,a);this.Jh.clearRect(0,0,
 b,c);this.Jh.drawImage(this.la,b-d-1,0);this.Jh.drawImage(this.la,-d-1,0)}}class Nb{constructor(a){this.rd=null;this.dr=1E4;this.Fd=!0;a.ik();this.Sa=a.Sa;this.bd=a.bd;this.xe=a.xe;this.rd=a.rd;this.Qm=window.performance.now();let b=null,c=this;b=function(){var e=c.dr-c.es();0>=e?c.ja():(window.clearTimeout(c.Sm),e=window.setTimeout(b,e+1E3),c.Sm=e)};b();this.Sa.oniceconnectionstatechange=function(){let e=c.Sa.iceConnectionState;"closed"!=e&&"failed"!=e||c.ja()};a=0;let d=this.bd;for(;a<d.length;){let e=
